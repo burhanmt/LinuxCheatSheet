@@ -1,0 +1,31 @@
+ls	: list of the files
+mkdir	: create folder
+rmdir	: remove folder
+mv 	: rename and move file or folder
+cd ~	: home directory
+cd /	: home directory
+touch 	: create file
+rm	: remove file
+rm -rf	: remove with force
+cat	: reads the file
+nano	: edit file
+gedit 	: edit file
+grep 	: search files for specific word --> grep -i searchItem (include)
+*/*	: selects all of the files and folders
+stat	: statistics of file or folder --> stat fileName.txt
+w	: Who is online?
+whatis	: tell you about the commands
+which	: location of the command
+whoami	: tells about the user
+last 	: shows who were logged in
+sudo -i : change to root account sysadmin 
+sudo su - username: change root to user
+
+sudo useradd -m userName : add user
+id username: find the id of the username
+grep '^username' /etc/passwd : find username in passwd
+sudo userdel -r username : delete user
+usermod -L userName: lock the username
+usermod -U userName: unlock the username
+
+
