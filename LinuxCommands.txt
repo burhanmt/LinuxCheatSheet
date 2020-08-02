@@ -23,9 +23,66 @@ sudo su - username: change root to user
 
 sudo useradd -m userName : add user
 id username: find the id of the username
-grep '^username' /etc/passwd : find username in passwd
 sudo userdel -r username : delete user
 usermod -L userName: lock the username
 usermod -U userName: unlock the username
+grep '^username' /etc/group : find username in groups
+grep '^username' /etc/passwd : find username in passwrd
+cd /etc/skel/ : when we create username it will be creatig all files in the /etc/skel folder
+useradd -c "username" username: it will create everyting from the /etc/skel folder
+chmod 	: change mode chmod 777 fileName user, group, others
+chown 	: change the ownership of the file root to user chown username:username fileName
+netstat -tunap: Print network connections, routing tables, interface statistics
+nmap 	: Network exploration tool and security / port scanner --> nmap localhost nmap 10.0.2.15
+ip addr: shows my IP
+crontab :scheduled tasks H 7 * * * (Everyday 7 am build in jenkins)
+firewall-cmd --list-all: which services allowed in our firewall
+firewall-cmd --add-port=123/tcp : adding port to firewall
+firewall-cmd --zone=public --add-service=https / http
+systemctl restart firewalld : restart the firewall will go to default 
+systemctl start httpd.service : The Apache webservice can be started using systemctl
+ps : displays information about a selection of the active processes
+sleep 300 &: and sign will show us the process id (PID)
+fg 1	: foreground let the jobs running sequence change bring to the first jobs
+bg 1 	: background let the jobs running sequence change bring to the end jobs
+jobs	: will show the current jobs
+a : show processes for all users
+u : display the process’s user/owner
+x : also show processes not attached to a terminal
+ps aux | grep chrome : shows processes for all users, owners, not in the terminal
+kill -l : kill process list
+kill -9 3827 : kill process in PID(process id) 3827 -> -9 : kill signal
+nohup sleep 300 & : nohup will run even terminal is closed
+top 	: shows most active processes
+cd /proc/ : all information about system can be seen inside this folder
+cat cpuinfo : tells us about cpu Info
+cat version: current version -> cat /proc/version
+cat meminfo: memory info
+df -h	: report file system disk space usage
+du -h 	: estimate file space usage
+lsb_release -a: version of ubuntu 
+fstab 	:static information about the filesystems -> cat /etc/fstab
+cd /root/ --> ls -l | grep `uname -r` : check the system details in boot folder
+lsusb 	: list USB devices
+lspci -V: list all PCI devices
+lsmod 	: Show the status of modules in the Linux Kernel
+sudo apt-get update : install the latest available version of a software 
+sudo apt install nfs-kernel-server
+netstat -r:netstat (network statistics) is a command line tool for monitoring network connections both incoming and outgoing 
+netstat -at: Listing only TCP (Transmission Control Protocol) port connections using 
+netstat -au: Listing only UDP (User Datagram Protocol ) port connections using 
+netstat -l: Listing all active listening ports connections 
+netstat -st: Showing statistics of only TCP protocol by using option 
+ifconfig: displaying private IP address
+ip addr show: displaying private IP address
+Wget 	: The non-interactive network downloader.   wget -d -r -c <URL>
+
+
+
+
+
+
+
+
 
 
